@@ -4,10 +4,49 @@
     Default markup for page level elements
 */
 
+/*add font face declaration */
+
+@font-face {
+    font-family: "Inter UI";
+    font-weight: 400;
+    src: url("../fonts/Inter-UI-Regular.woff2")format("woff2");
+}
+
+@font-face {
+    font-family: "Inter UI";
+    font-weight: 700;
+    src: url("../fonts/Inter-UI-Bold.woff2")format("woff2");
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 400;
+    src: url("../fonts/DroidSerif-Regular-webfont.woff")format("woff");
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 400;
+    src: url("../fonts/DroidSerif-Italic-webfont.woff")format("woff");
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 700;
+    src: url("../fonts/DroidSerif-Bold-webfont.woff")format("woff");
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 700;
+    src: url("../fonts/DroidSerif-BoldItalic-webfont.woff")format("woff");
+}
+
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    /*font-family: "Inter-UI", "Helvetica Neue", Helvetica, arial, sans-serif;*/
+    font-family: "DroidSerif", Georgia, serif;
     color: #5C6366;
     padding: 48px 24px 24px;
 }
@@ -25,7 +64,7 @@ body {
  */
 
 ::-moz-selection {
-    background: #e85e00;
+    background: #00E6A1;
     color: white;
     text-shadow: none;
 }
@@ -53,25 +92,26 @@ img {
     Default markup for typographic elements
 */
 
+h1, h2, h3 {
+    color: #17181A;
+}
+
 h1 {
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 24px;
-    color: #17181A;
 }
 
 h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
-    color: #17181A;
 }
 
 h3 {
     font-size: 18px;
     line-height: 24px;
     margin: 0 0 24px;
-    color: #17181A;
 }
 
 h4, h5, h6 {
